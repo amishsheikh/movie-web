@@ -9,7 +9,8 @@ import { getTrendingMovies, updateSearchCount } from "./appwrite.js";
 // 1. Import Toaster and toast
 import { Toaster, toast } from "react-hot-toast";
 
-const API_BASE_URL = "https://api.themoviedb.org/3";
+// We point to our own domain now, Netlify handles the rest
+const API_BASE_URL = "/api";
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
 const API_OPTIONS = {
